@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="model" class="showModel hideModel">
+        <div class="openModal">Take home finals are <span>easier?</span></div>
+    </div>
+    <div class="header">
+        CSE 134 - final Project Completion Fastest Times
+        <p id="timer"></p>
+    </div>
+    <div class="main">
+        <div class="main_title">Fastest Completion Times Leaderboard:</div>
+        <div class="mainbox">
+            <div class="yeargroup">
+                <div class="box_title">This Year</div>
+                <div class="item_row">
+                    <div>🥇</div>
+                    <p id="std_cur_1" class="text gold"></p>
+                </div>
+                <div class="item_row">
+                    <div>🥈</div>
+                    <p id="std_cur_2" class="text silver"></p>
+                </div>
+                <div class="item_row">
+                    <div>🥉</div>
+                    <p id="std_cur_3" class="text bronze"></p>
+                </div>
+                <div class="item_row">
+                    <div>4</div>
+                    <p id="std_cur_4" class="text"></p>
+                </div>
+                <div class="item_row">
+                    <div>5</div>
+                    <p id="std_cur_5" class="text"></p>
+                </div>
+                <div class="item_row">
+                    <div>6</div>
+                    <p id="std_cur_6" class="text"></p>
+                </div>
+                <div class="item_row">
+                    <div>7</div>
+                    <p id="std_cur_7" class="text"></p>
+                </div>
+            </div>
+            <div class="yeargroup">
+                <div class="box_title">
+                    Previous Years
+                    <div class="dropdown" onchange={selectOption(event)}>
+                        <select>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item_row">
+                    <div>🥇</div>
+                    <p id="std_1" class="text gold"></p>
+                </div>
+                <div class="item_row">
+                    <div>🥈</div>
+                    <p id="std_2" class="text silver"></p>
+                </div>
+                <div class="item_row">
+                    <div>🥉</div>
+                    <p id="std_3" class="text bronze"></p>
+                </div>
+                <div class="item_row">
+                    <div>4</div>
+                    <p id="std_4" class="text"></p>
+                </div>
+                <div class="item_row">
+                    <div>5</div>
+                    <p id="std_5" class="text"></p>
+                </div>
+                <div class="item_row">
+                    <div>6</div>
+                    <p id="std_6" class="text"></p>
+                </div>
+                <div class="item_row">
+                    <div>7</div>
+                    <p id="std_7" class="text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <div id="button">
+                <img src="https://introweb.tech/cse134-final/question.svg" alt="?">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Made with ❤️ in Summer 2022 - <a href="https://www.freelancer.com/u/Olechkashusar272" target="_blank">UCSD</a>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
